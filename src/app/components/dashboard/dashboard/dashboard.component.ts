@@ -41,5 +41,6 @@ export class DashboardComponent {
   logOut() {
     this.localService.clearLocalStorage();
     this.router.navigate(['']);
+    console.log('logout Successfully');
   }
 }
