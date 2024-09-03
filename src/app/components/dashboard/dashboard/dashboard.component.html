@@ -1,0 +1,162 @@
+<section
+  class="vh-105"
+  style="
+    background-color: rgb(255, 140, 0);
+    background-image: url('assets/Swirl.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  "
+>
+  <!-- Navbar at the top -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light"
+    style="
+      background-color: rgba(255, 140, 0, 0.9);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      height: 10%;
+    "
+  >
+    <div class="container-fluid">
+      <!-- Small Image on the Left Side -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/Fooddelight-poster.jpg"
+          alt="Logo"
+          style="
+            height: 60px;
+            width: auto;
+            margin-right: 20px;
+            margin-top: auto;
+            margin-left: 8%;
+          "
+        />
+      </a>
+      <h2 style="font-weight: bolder">FooodDelight</h2>
+
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul
+          class="navbar-nav d-flex align-items-center"
+          style="font-weight: 700; font-size: 15px"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active d-flex align-items-center"
+              aria-current="page"
+              (click)="renderToAddRestaurant()"
+              style="color: black; transition: color 0.3s"
+              onmouseover="this.style.color='#FFD700';"
+              onmouseout="this.style.color='black';"
+            >
+              <i class="bi bi-building-fill-add mx-2"></i>
+              Add Restaurant
+            </a>
+          </li>
+          <li class="nav-item mx-5">
+            <a
+              class="nav-link d-flex align-items-center"
+              (click)="renderToAllRestaurant()"
+              style="color: black; transition: color 0.3s"
+              onmouseover="this.style.color='#FFD700';"
+              onmouseout="this.style.color='black';"
+            >
+              <i class="bi bi-border-all mx-2"></i>
+              All Restaurants
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a
+      href="/add-restaurant"
+      class="btn btn-primary mt-4"
+      style="
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: #ffd700;
+        color: black;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+      "
+      onmouseover="this.style.backgroundColor='#FFC107';"
+      onmouseout="this.style.backgroundColor='#FFD700';"
+    >
+      LogOut
+    </a>
+  </nav>
+
+  <!-- Centered Welcome Message -->
+  <div
+    class="d-flex justify-content-center align-items-center"
+    style="
+      height: 80vh;
+      flex-direction: column;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    "
+  >
+    <h1
+      class="text-center"
+      style="
+        font-family: 'Poppins', sans-serif;
+        font-size: 56px;
+        color: black;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      "
+    >
+      WELCOME TO FOODDELIGHT...
+    </h1>
+    <p
+      class="text-center"
+      style="
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        color: black;
+        font-weight: 300;
+        max-width: 600px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      "
+    >
+      Experience the best culinary delights with us. Explore new restaurants,
+      savor delicious meals, and enjoy a world of flavors!
+    </p>
+    <a
+      href="/add-restaurant"
+      class="btn btn-primary mt-4"
+      style="
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: #ffd700;
+        color: black;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+      "
+      onmouseover="this.style.backgroundColor='#FFC107';"
+      onmouseout="this.style.backgroundColor='#FFD700';"
+    >
+      Get Started
+    </a>
+  </div>
+</section>

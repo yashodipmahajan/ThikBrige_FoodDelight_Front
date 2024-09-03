@@ -1,0 +1,117 @@
+<section
+  style="
+    background-color: rgb(255, 140, 0);
+    background-image: url('assets/Swirl.png');
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <div
+    class="container text-center"
+    style="background-color: rgb(255, 140, 0); padding-top: 2%"
+  >
+    <h1 style="font-weight: bold">All Restaurants</h1>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Sr.No.
+        </th>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Date
+        </th>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Name
+        </th>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Description
+        </th>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Location
+        </th>
+        <th
+          style="
+            background-color: #c4932a;
+            color: #212529;
+            border: 1px solid darkorange;
+          "
+          scope="col"
+        >
+          Delete
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let row of restaurantsTable; let i = index"
+        style="background-color: rgb(255, 140, 0)"
+      >
+        <td style="background-color: white; border: 1px solid darkorange">
+          {{ i + 1 }}
+        </td>
+        <td style="background-color: white; border: 1px solid darkorange">
+          {{ row.createdAt | date }}
+        </td>
+        <td style="background-color: white; border: 1px solid darkorange">
+          {{ row.name }}
+        </td>
+        <td style="background-color: white; border: 1px solid darkorange">
+          {{ row.description }}
+        </td>
+        <td style="background-color: white; border: 1px solid darkorange">
+          {{ row.location }}
+        </td>
+        <td
+          style="
+            background-color: white;
+            border: 1px solid darkorange;
+            cursor: pointer;
+          "
+          (click)="deleteRestaurant(row.id)"
+        >
+          <i class="bi bi-trash3-fill"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
