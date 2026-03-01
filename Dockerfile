@@ -43,7 +43,7 @@ RUN npm run build
 # Step 2: Serve using Nginx
 FROM nginx:alpine
 
-COPY --from=build /app/dist/ThikBrige_FoodDelight_Front /usr/share/nginx/html
+COPY --from=build /app/dist/*/browser /usr/share/nginx/html
 
 EXPOSE 80
 
