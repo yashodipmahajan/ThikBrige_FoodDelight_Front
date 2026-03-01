@@ -11,7 +11,6 @@ import { SnackbarComponent } from './standalone-components/snackbar/snackbar/sna
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoginComponent } from './auth/components/login/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddRestaurantComponent } from './components/add-restaurant/add-restaurant/add-restaurant.component';
 import { AllRestaurantsComponent } from './components/all-restaurants/all-restaurants/all-restaurants.component';
 import { HomepageComponent } from './components/homepage/homepage/homepage.component';
@@ -34,7 +33,6 @@ import { HomepageComponent } from './components/homepage/homepage/homepage.compo
     HttpClientModule,
     SnackbarComponent,
     MatSnackBarModule,
-    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

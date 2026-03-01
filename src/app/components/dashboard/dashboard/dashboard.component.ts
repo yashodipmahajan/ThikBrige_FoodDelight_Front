@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import { LocalstorageService } from 'src/app/core/services/local-storage/localstorage.service';
 
 @Component({
@@ -10,8 +8,8 @@ import { LocalstorageService } from 'src/app/core/services/local-storage/localst
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent {
-  faRewew = faRotateRight;
-  faClock = faClock;
+  // faRewew = faRotateRight;
+  // faClock = faClock;
 
   constructor(
     private router: Router,
